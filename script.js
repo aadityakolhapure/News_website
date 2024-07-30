@@ -8,7 +8,7 @@
 //     "Life on Land", "Peace, Justice and Strong Institutions", "Partnerships for the Goals"
 // ];
 
-const sdgs = ["No Poverty", "Zero Hunger"];
+const sdgs = ["No Poverty", "Zero Hunger" , "Good Health and Well-being"];
 
 // Function to fetch articles for a specific SDG
 function fetchSDGArticles(sdg) {
@@ -17,8 +17,7 @@ function fetchSDGArticles(sdg) {
 		`q="${encodeURIComponent(sdg)}"&` +
 		`from=2024-07-20&` +
 		`sortBy=relevancy&` +
-		`pageSize=5&` +
-		`apiKey=af72aa93508c44cea2da08a8fc188032`; // Replace with your actual API key
+		`apiKey=bdaea2c3cb80499a9ebb11bc49b45a9d`; // Replace with your actual API key
 
 	fetch(url)
 		.then((response) => response.json())
@@ -55,22 +54,13 @@ function displayArticles(sdg, articles) {
 	// Create a flex container for articles
 	const articlesContainer = document.createElement("div");
 	articlesContainer.classList.add(
-		"flex",
-		"flex-wrap",
-		"justify-start",
-		"-mx-2"
+		'flex', 'flex-wrap', 'justify-start', '-mx-2'
 	);
 
 	articles.forEach((article) => {
 		const articleElement = document.createElement("div");
 		articleElement.classList.add(
-			"max-w-sm",
-			"w-full",
-			"sm:w-1/2",
-			"md:w-1/3",
-			"lg:w-1/3",
-			"px-2",
-			"mb-4"
+			'max-w-sm', 'w-full', 'sm:w-1/2', 'md:w-1/3', 'lg:w-1/3', 'px-2', 'mb-4'
 		);
 
 		// Article content (as before)
