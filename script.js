@@ -134,13 +134,13 @@ function displayArticles(sdg, articles) {
 function handleSidebarClick(e) {
 	if (e.target.classList.contains("sidebar-item")) {
 		document.querySelectorAll(".sidebar-item").forEach((item) => {
-			item.classList.remove("bg-blue-500", "text-white");
+			item.classList.remove("text-blue-500");
 			item.classList.add("text-gray-900");
 		});
 
 		const clickedItem = e.target;
 		clickedItem.classList.remove("text-gray-900");
-		clickedItem.classList.add("bg-blue-500", "text-white");
+		clickedItem.classList.add("text-blue-700");
 
 		const sdg = clickedItem.textContent.trim();
 		fetchSDGArticles(sdg);
