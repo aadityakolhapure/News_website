@@ -15,7 +15,7 @@ const sdgs = [
 	"Life Below Water",
 	"Life on Land",
 	"Peace, Justice and Strong Institutions",
-	"Partnerships for the Goals",
+	"Partnership For Goals",
 ];
 
 function showSpinner() {
